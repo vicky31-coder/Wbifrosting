@@ -1,4 +1,4 @@
-import { StyleSheet, SafeAreaView, TextInput, Text, TouchableOpacity } from "react-native";
+import { StyleSheet, SafeAreaView, TextInput, Text, TouchableOpacity, View } from "react-native";
 import { useState } from "react";
  
 export default function App() {
@@ -6,8 +6,12 @@ export default function App() {
  
     return (
         <SafeAreaView>
-            <Text style={styles.title}>Wbifrost</Text>
-            <Text style={styles.basetext}>For your place weather information</Text>
+            <View style={styles.titlecon}>
+                <Text style={styles.title}>Wbifrost</Text>
+            </View>
+            <View style={styles.basetextcon}>  
+                <Text style={styles.basetext}>For your place weather information</Text>
+            </View>
             <TextInput
                 placeholder="Username"
                 value={username}
@@ -23,16 +27,25 @@ export default function App() {
 }
  
 const styles = StyleSheet.create({
+    titlecon: {
+        width: '100%',
+        height: '10%',
+        marginTop: '70%',
+    },            
     title: {
-        fontSize: 40,
+        fontSize: 30,
         color: "#000",
-        marginTop: '80%',
-        marginHorizontal: '28%',
-        fontWeight: "bold"
+        fontWeight: "bold",
+        textAlign: 'center'
+    },
+    basetextcon: {
+        width:'100%',
+        height: '10%',
+        marginTop:'-2.5%'
     },
     basetext:{ 
         fontSize: 20,
-        marginHorizontal:'9.4%'
+        textAlign: 'center'
     },
     input: {
         padding: 10,
@@ -41,7 +54,6 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderColor: '#000',
         marginHorizontal: '10%',
-        marginTop: '5%'
     },
     button: {
         backgroundColor: '#87CEEB',
