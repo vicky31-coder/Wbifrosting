@@ -14,7 +14,7 @@ const Home = () => {
     const [greeting, setGreeting] = useState('Good Morning !');
     const Username = 'vicky31xHork';
     const [weatherData, setweatherData] = useState(null);
-    const API_KEY = '7320fa03aa039638f10340d81f72b990';
+    const API_KEY = 'jeosbsnnh1939489191';
     const city = 'chennai'
 
 
