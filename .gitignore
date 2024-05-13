@@ -35,4 +35,4 @@ yarn-error.*
 *.tsbuildinfo
 
 # Ignoring API file
-Api.js
+./src/Api.js
